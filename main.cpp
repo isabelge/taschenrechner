@@ -1,6 +1,9 @@
 #include <iostream>
 
 using namespace std;
+double zahl1;
+double zahl2;
+double Ergebnis;
 
 int main() {
     int wahl = 0;
@@ -16,11 +19,19 @@ int main() {
     switch (wahl) {
         case 1:
             cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
-            // hier Funktion für Addition einfügen
+
+
             break;
         case 2:
-            cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
-            // hier Funktion für die Subtraktion einfügen
+
+        cout << "Bitte die 1. Zahl eingeben." <<endl;
+        cin >> zahl1;
+        cout << "Bitte die 2. Zahl eingeben." <<endl;
+        cin >> zahl2;
+
+        Ergebnis = zahl1 - zahl2;
+        cout <<"Das Ergebnis betraegt:" << Ergebnis << endl;
+
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
