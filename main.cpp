@@ -5,6 +5,11 @@ double zahl1;
 double zahl2;
 double Ergebnis;
 
+// Funktionsdefinition für Addition
+double addition(double a, double b) {
+    return a + b;
+}
+
 int main() {
     int wahl = 0;
 
@@ -19,8 +24,15 @@ int main() {
     switch (wahl) {
         case 1:
             cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
+            cout << "Addition ausgewaehlt" << endl;
 
+            cout << "Bitte erste Zahl eingeben: ";
+            cin >> zahl1;
 
+            cout << "Bitte zweite Zahl eingeben: ";
+            cin >> zahl2;
+
+            cout << "Ergebnis: " << addition(zahl1, zahl2) << endl;
             break;
         case 2:
 
