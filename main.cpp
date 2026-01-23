@@ -2,8 +2,14 @@
 
 using namespace std;
 
+// Funktionsdefinition für Addition
+double addition(double a, double b) {
+    return a + b;
+}
+
 int main() {
     int wahl = 0;
+    double zahl1, zahl2;
 
     cout << "Taschenrechner"  << endl;
     cout << "1 fuer Addition"  << endl;
@@ -16,8 +22,17 @@ int main() {
     switch (wahl) {
         case 1:
             cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
-            // hier Funktion für Addition einfügen
+            cout << "Addition ausgewaehlt" << endl;
+
+            cout << "Bitte erste Zahl eingeben: ";
+            cin >> zahl1;
+
+            cout << "Bitte zweite Zahl eingeben: ";
+            cin >> zahl2;
+
+            cout << "Ergebnis: " << addition(zahl1, zahl2) << endl;
             break;
+
         case 2:
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
             // hier Funktion für die Subtraktion einfügen
