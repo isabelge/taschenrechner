@@ -2,6 +2,8 @@
 
 using namespace std;
 
+void addition();
+
 int main() {
     int wahl = 0;
 
@@ -17,6 +19,9 @@ int main() {
         case 1:
             cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
             // hier Funktion für Addition einfügen
+
+            addition();
+            
             break;
         case 2:
             cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
@@ -37,4 +42,15 @@ int main() {
 
 
     return 0;
+}
+
+void addition() {
+    int zahl1 = 0;
+    int zahl2 = 0;
+    cout << "Eingabe Zahl 1:"  << endl;    
+    cin >> zahl1;
+    cout << "Eingabe Zahl 2:"  << endl;
+    cin >> zahl2;
+    cout << "Resultat:" << zahl1 + zahl2 << endl;
+    
 }
