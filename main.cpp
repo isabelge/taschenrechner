@@ -1,6 +1,14 @@
 #include <iostream>
 
 using namespace std;
+double zahl1;
+double zahl2;
+double Ergebnis;
+
+// Funktionsdefinition für Addition
+double addition(double a, double b) {
+    return a + b;
+}
 
 int main() {
     int wahl = 0;
@@ -16,11 +24,26 @@ int main() {
     switch (wahl) {
         case 1:
             cout << "Gruppenmitglied 1 kann hier die Addition implementieren."  << endl;
-            // hier Funktion für Addition einfügen
+            cout << "Addition ausgewaehlt" << endl;
+
+            cout << "Bitte erste Zahl eingeben: ";
+            cin >> zahl1;
+
+            cout << "Bitte zweite Zahl eingeben: ";
+            cin >> zahl2;
+
+            cout << "Ergebnis: " << addition(zahl1, zahl2) << endl;
             break;
         case 2:
-            cout << "Gruppenmitglied 1 kann hier die Subtraktion implementieren."  << endl;
-            // hier Funktion für die Subtraktion einfügen
+
+        cout << "Bitte die 1. Zahl eingeben." <<endl;
+        cin >> zahl1;
+        cout << "Bitte die 2. Zahl eingeben." <<endl;
+        cin >> zahl2;
+
+        Ergebnis = zahl1 - zahl2;
+        cout <<"Das Ergebnis betraegt:" << Ergebnis << endl;
+
             break;
         case 3:
             cout << "Gruppenmitglied 1 kann hier die Multiplikation implementieren."  << endl;
